@@ -1,9 +1,9 @@
 # Школа Машинного Обучения (MLSchool)
 ### Лаборатория инноватики МФТИ
 
-### [Официальный сайт Школы](https://deepmipt.github.io/dlschl/)
+### [Официальный сайт Школы]()
 
-### [YouTube-канал Школы](https://www.youtube.com/channel/UCFTNoZYjkg-3LZTHrHfV1nQ)
+### [YouTube-канал Школы]()
 
 ## Что?
 
