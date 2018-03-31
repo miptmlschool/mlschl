@@ -3,7 +3,7 @@
 
 ### [Официальный сайт Школы](https://miptmlschool.github.io/)
 
-### [YouTube-канал Школы]()
+### [YouTube-канал Школы](https://www.youtube.com/channel/UCFTNoZYjkg-3LZTHrHfV1nQ)
 
 ## Что?
 
