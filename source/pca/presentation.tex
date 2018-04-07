@@ -5,6 +5,7 @@
 \usepackage{amssymb,amsfonts,amsmath,mathtext}
 \usepackage{cite,enumerate,float,indentfirst}
 \usepackage{movie15}
+\usepackage{listings}
 
 \graphicspath{{images/}}
 
@@ -59,7 +60,8 @@
   \item \textbf{Отбор признаков} 
   \item{Метрики, кросс-валидация} 
 \end{itemize}
-\end{frame}- 
+\end{frame} 
+
 \begin{frame}
 	\frametitle{Вектор}
 	Абстрактный объект и операции для которых:
@@ -89,18 +91,15 @@
     \includegraphics[width=\textwidth]{girl-ok.png}
 \end{frame}
 
-% this is commmented>>>
-\iffalse
 \begin{frame}
 	\frametitle{Например #2}
 	\vspace{-2em}
 	\begin{center}
-		  \item \( a+(b+c) \neq (b+a)+c \)\\
-    \includegraphics[width=\textwidth]{sum.png}
+	\( \alpha(a+b) \neq \alpha a+\alpha b\)\\
+	не существует отрицательного элемента\\[2em]
+    \includegraphics[width=0.7\textwidth]{lists.png}
 	\end{center}
 \end{frame}
-\fi
-%<<< this is commmented
 
 \begin{frame}
 \frametitle{Базис}
@@ -127,6 +126,15 @@
 \end{frame}
 
 \begin{frame}
+	Хотим закодировать цвет - RGB (3-х мерный вектор)\\
+	Физически - длина волны, один параметр.\\
+	Нужно как-то преобразовать RGB\\
+	\pause
+	\includegraphics[width=0.7\linewidth]{rgbhsv.jpg}
+	\includegraphics[width=0.3\linewidth]{light.png}\\
+\end{frame}
+
+\begin{frame}
 \frametitle{Скалярное произведение}
 	Любая функция $f: V^2 \mapsto \mathbb{R}$ ($f(a,b)=\alpha$)\\
 	для которой:\\
@@ -138,6 +146,7 @@
 	$	a+b=\sum e\langle e,a \rangle +\sum e\langle e,b \rangle=
 	\sum e\langle e,a +b \rangle$
 	\end{center}
+	Например: $a_1b_1 + a_2b_2 + a_3b_3 + ...= \sum_{i=1}^d a_ib_i$
 \end{frame}
 
 \begin{frame}
@@ -200,12 +209,21 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{PCA, код}
+	\includegraphics[width=\linewidth]{pcacode.png}
+\end{frame}
+\begin{frame}
 \frametitle{PCA, Визуализация}
 	\includegraphics[width=\linewidth]{pca.png}
 \end{frame}
 \begin{frame}
 \frametitle{PCA, Визуализация}
 	\includegraphics[width=\linewidth]{pca2.png}
+\end{frame}
+\begin{frame}
+\frametitle{PCA, Визуализация}
+	Бывают случаи, когда проецировать нужно на малую компоненту\\
+	\includegraphics[width=0.5\linewidth]{pcastrange.png}
 \end{frame}
 
 \begin{frame}
@@ -239,8 +257,18 @@
 \begin{frame}
 	\frametitle{Кросс-валидация}
 	Делим на k частей (фолдов).\\
+	adf
 	Тренируем на k-1 и оцениваем качество модели на одном из них.\\[1em]
 	\includegraphics[width=\linewidth]{cv.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ссылки}
+	\href{https://habrahabr.ru/post/304214/}{\textit{Статья на Хабре}}\\
+	\href{http://setosa.io/ev/eigenvectors-and-eigenvalues/}{\textit{Bизуализация собственных векторов}}\\
+	\href{http://setosa.io/ev/principal-component-analysis/}{\textit{Bизуализация PCA}}\\
+	\href{https://www.youtube.com/watch?v=ey2PE5xi9-A}{\textit{Лекция от Стенфорда(pdf)}}\\
+	\href{http://cs229.stanford.edu/notes/cs229-notes10.pdf}{\textit{Лекция от Стенфорда}}\\
 \end{frame}
 
 \end{document} 
