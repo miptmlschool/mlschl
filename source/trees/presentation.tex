@@ -344,6 +344,15 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Градиентный бустинг}
+        $f(\overline{x} + \overline{\Delta x}) = f(\overline{x}) + \sum\limits_{i=1}^{n} \frac{\partial f(x_1, ..., x_n)}{\partial x_i} (\overline{x}) \Delta x_i + \varepsilon(\overline{x})$
+        
+        При очень малом $\overline{\Delta x}$ и гладкой функции f, слагаемое $\varepsilon(\overline{x})$ пренебрежимо мало. Сумма есть скалярное произведение векторов градиента $\nabla f$ и $\overline{\Delta x}$. Поэтому среди векторов фиксированной длины максимальный прирост будет у сонаправленных с  $\nabla f$ векторов.
+        
+\end{frame}
+
+
+\begin{frame}
 \frametitle{Градиентный спуск}
         Предложим следующий алгоритм численной минимизации функции $f$:
         Выберем начальную точку $x_0$. 
